@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Detail = styled.footer`
+    display: flex;
     border-top: 5px dotted white;
     min-width: 220px;
     padding: 10px;
     width: 80%;
+    letter-spacing: 1.5px;
 `;
 
 const Text = styled.h3`
@@ -14,13 +16,14 @@ const Text = styled.h3`
 `;
 
 const Link = styled.a`
-    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
 `;
 
 export function Footer() {
     return (
         <Detail>
-            <Text>Kimhantak page. Github: <Link href="github.com/kimhantak">Link</Link></Text>
+            <Text>Kimhantak page. <Link href="github.com/kimhantak">Github</Link></Text>
         </Detail>
     );
 }
