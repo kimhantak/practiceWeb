@@ -22,6 +22,8 @@ const Links = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
+    font-weight: bold;
+    letter-spacing: 1.5px;
 `;
 
 const Li = styled(Link)`

@@ -18,7 +18,7 @@ const Container = styled.div`
     width: 90%;
     min-width: 265px;
     max-width: 1300px;
-    height: 95vh;
+    min-height: auto;
     border: 5px solid white;
     border-radius: 3px;
 `;
