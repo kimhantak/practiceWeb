@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Footer } from '../comp/Footer';
 import Header from '../comp/Header';
 import logo from '../logo.svg';
+import MainArticle from './MainArticle';
 
 const Container = styled.div`
     position: absolute;
@@ -24,19 +25,21 @@ const Container = styled.div`
 
 const Center = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
 `;
 
-export const IconContext = createContext("");
+export const IconContext = createContext(null);
 
 export function Home() {
     return (
-        <Container>
+        <Container className="Home">
             <IconContext.Provider value={logo}>
                 <Header />
             </IconContext.Provider>
-            <Center>
+            <Center className="Center">
+                <MainArticle />
                 <Footer />
             </Center>
         </Container>
