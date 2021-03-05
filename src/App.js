@@ -1,9 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import Home from './pages/home';
+import NotFound from './pages/notfound';
+
+function App() {  
   return (
-    null
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
