@@ -23,9 +23,9 @@ const Text = styled.p`
     text-align: left;
     padding-left: 5px;
     height: 300px;
-    overflow: scroll;
     @media screen and (max-width: 1000px) {
         font-size: 9px;
+        overflow: scroll;
     }
 `;
 
