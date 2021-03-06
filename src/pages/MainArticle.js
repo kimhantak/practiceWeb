@@ -22,8 +22,10 @@ const Text = styled.p`
     font-size: 20px;
     text-align: left;
     padding-left: 5px;
+    height: 300px;
+    overflow: scroll;
     @media screen and (max-width: 1000px) {
-        font-size: 11.5px;
+        font-size: 9px;
     }
 `;
 
